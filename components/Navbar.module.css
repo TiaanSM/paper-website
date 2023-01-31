@@ -58,7 +58,7 @@
     font-size: 14px;
     font-weight: 600;
     position: absolute;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     box-shadow: inset 0px 0px 0px 0px black;
 }
 
@@ -70,8 +70,8 @@
 /*/ Hamburger Icon /*/
 
 .menu {
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     position: relative;
     cursor: pointer;
     z-index: 50;
@@ -79,7 +79,7 @@
 
 .bar1, .bar2 {
     display: block;
-    width: 35px;
+    width: 36px;
     height: 1px;
     background-color: black;
     position: absolute;
@@ -162,12 +162,13 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    z-index: 40;
     position: fixed; 
     top: 0;
     left: 0;
-    animation: menuClickClosed 1s ease forwards;
+    animation: menuClickClosed 2s ease forwards;
     overflow: hidden;
+    visibility: hidden;
+    transition: visibility 1.7s;
 }
 
 @keyframes menuClick {
@@ -184,6 +185,10 @@
 }
 @keyframes menuClickClosed {
     0% {
+        opacity: 1;
+        display: block;
+    }
+    50% {
         opacity: 1;
         display: block;
     }
@@ -207,6 +212,31 @@
 
 .leftMenuContainer {
     width: 410px;
+    animation: slideReverse 1s ease forwards;
+}
+
+.animatedLeftContainer {
+    width: 410px;
+    animation: leftMenuSlide 1s ease forwards;
+}
+
+@keyframes leftMenuSlide {
+    from {
+        opacity: 0;
+        margin-bottom: 2rem;
+    }
+    to {
+        opacity: 1;
+        margin-bottom: 0;
+    }
+}
+@keyframes slideReverse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .bigLogoContainer {
@@ -256,36 +286,42 @@
     list-style: none;
 }
 
-.linkContainer:hover > .navLink {
+.linkContainer:hover > .linkSpan > .animatedNavLink {
     color: #212529;
 }
 
+.linkSpan {
+    margin: 0;
+    overflow: hidden;
+    display: block;
+}
+
 .navLink {
+    display: block;
+    font-size: 4.2rem;
+    font-family: sans-serif;
+    padding-left: 0.5rem;
+    transform: translate(0,0);
+    color: white;
+    transition: all 0.5s ease;
+    animation: revealRev 0.5s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
+}
+
+.animatedNavLink {
+    display: block;
     color: white;
     font-size: 4.2rem;
     font-family: sans-serif;
-    font-weight: 300;
     padding-left: 0.5rem;
     cursor: pointer;
-    transition: color 0.5s ease;
+    transition: all 0.5s ease;
+    transform: translate(0,100%);
+    animation: reveal 0.7s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
 }
 
-.navLink:nth-child(1):hover {
+.linkSpan > .animatedNavLink:nth-child(1):hover {
     color: white;
 }
-.navLink:nth-child(2):hover {
-    color: white;
-}
-.navLink:nth-child(3):hover {
-    color: white;
-}
-.navLink:nth-child(4):hover {
-    color: white;
-}
-.navLink:nth-child(5):hover {
-    color: white;
-}
-
 
 .footerMenuContainer {
     width: 100%;
@@ -322,4 +358,106 @@
     font-family: sans-serif;
     font-size: 12px;
     cursor: pointer;
+}
+
+@keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+}
+@keyframes revealRev {
+    0% {
+      transform: translate(0,0);
+      display: block;
+      color: white;
+    }
+    100% {
+      transform: translate(0,100%);
+      display: none;
+      color: black;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .mobileLogo {
+        font-size: 4rem;
+        font-family: sans-serif;
+    }
+
+    .menu, .activeMenu {
+        width: 55px;
+        height: 55px;
+    }
+
+    .rightContainer {
+        width: auto;
+        margin-right: 1.7rem;
+    }
+
+    .ctaButton {
+        width: 147px;
+        height: 61px;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctaButton > span {
+        padding: 2rem 1.74rem;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        position: absolute;
+        transition: all 1s ease;
+        box-shadow: inset 0px 0px 0px 0px black;
+    }
+
+    .ctaButton > span:hover {
+        box-shadow: inset 0px -300px 0px 0px black;
+        color: white;
+        transition: all 1s ease;
+    }
+
+    .bar1, .bar2, .activeBar1, .activeBar2 {
+        width: 55px;
+    }
+
+    .bar1 {
+        top: 27px;
+        animation: mobileBar1Slide 1s ease forwards;
+        animation-delay: 1s;
+    }
+    .bar2 {
+        bottom: 27px;
+        animation: mobileBar2Slide 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .centerText {
+        display: none;
+    }
+}
+
+
+
+@keyframes mobileBar1Slide {
+    0% {
+        top: 27px;
+    }
+    100% {
+        top: 21px;
+    }
+}
+@keyframes mobileBar2Slide {
+    0% {
+        bottom: 27px;
+    }
+    100% {
+        bottom: 21px;
+    }
 }

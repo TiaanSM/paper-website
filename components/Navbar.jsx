@@ -13,13 +13,17 @@ const Navbar = () => {
         setIsActive(!isActive);
         setOpenMenu(!openMenu);
     }
+
+    const isMobile = window.innerWidth < 575;
     
   return (
     <div className={styles.nav}>
 
       <div className={styles.contentContainer}>
-        
+
+        {isMobile ? <span className={styles.mobileLogo}>P\</span> :
         <span className={styles.logo}>Paper<span className={styles.reg}>&reg;</span></span>
+        }
         
         <span className={styles.centerText}>DIGITAL SOUL &copy; 2022</span>
 
@@ -43,7 +47,7 @@ const Navbar = () => {
 
         <div className={styles.mainMenuContainer}> 
 
-            <div className={styles.leftMenuContainer}>
+            <div className={openMenu ? styles.animatedLeftContainer : styles.leftMenuContainer}>
                 <div className={styles.bigLogoContainer}>
                     <span className={styles.bigLogo}>P\</span>
                 </div>
@@ -58,11 +62,21 @@ const Navbar = () => {
  
             <div className={styles.rightMenuContainer}>
                 <ul className={styles.linkContainer}>
-                    <li className={styles.navLink}>Work</li>
-                    <li className={styles.navLink}>Services</li>
-                    <li className={styles.navLink}>About</li>
-                    <li className={styles.navLink}>Manifesto</li>
-                    <li className={styles.navLink}>Contact</li>
+                  <span className={styles.linkSpan}>
+                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Work</li>
+                  </span>
+                  <span className={styles.linkSpan}>
+                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Services</li>
+                    </span>
+                    <span className={styles.linkSpan}>
+                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>About</li>
+                    </span>
+                    <span className={styles.linkSpan}>
+                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Manifesto</li>
+                    </span>
+                    <span className={styles.linkSpan}>
+                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Contact</li>
+                    </span>
                 </ul>
             </div>
 
