@@ -381,6 +381,38 @@
     }
 }
 
+@media (max-width: 850px) {
+
+    .animatedLeftContainer {
+        padding-left: 2.5rem;
+        width: 350px;
+    }
+    .bigLogoContainer {
+        padding-bottom: 2rem;
+    }
+    .animatedNavLink {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .centerText {
+        display: none;
+    }
+    .ctaButton {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .bigLogo {
+        font-size: 8rem;
+    }
+    .animatedNavLink {
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 575px) {
 
     .mobileLogo {
@@ -408,9 +440,9 @@
     }
 
     .ctaButton > span {
-        padding: 2rem 1.74rem;
+        padding: 2rem 1.84rem;
         font-family: sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         font-weight: 600;
         position: absolute;
         transition: all 1s ease;
@@ -438,12 +470,110 @@
         animation-delay: 1s;
     }
 
+    .activeBar1 {
+        top: 27px;
+    }
+    .activeBar2 {
+        top: 27px;
+    }
+
     .centerText {
         display: none;
     }
+
+    /*/ Menu query /*/
+
+    .openMenu {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .mainMenuContainer {
+        flex-direction: column-reverse;
+        height: 130vh;
+        justify-content: flex-end;
+    }
+
+    .bigLogoContainer {
+        display: none;
+    }
+
+    .rightMenuContainer {
+        width: 100vw;
+        padding-inline: 3rem;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+    }
+
+    .socialsContainer {
+        padding-bottom: 5rem;
+    }
+
+    .linkSpan {
+        padding: 0.4rem 0;
+    }
+
+    .socialLink {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-left: 0;
+    }
+
+    .navLink {
+        font-size: 3.5rem;
+        padding-left: 0;
+    }
+
+    .animatedNavLink {
+        font-size: 3.5rem;
+        padding-left: 0;
+    }
+
+    .leftMenuContainer {
+        width: 100vw;
+        padding-left: 3rem;
+    }
+
+    .animatedLeftContainer {
+        width: 100vw;
+        padding-left: 3rem;
+    }
+
+    .footerLinkContainer {
+        display: none;
+    }
+
+    .footerMenuContainer {
+        bottom: -180px;
+        left: 3rem;
+    }
 }
 
+@media (max-width: 380px) {
 
+    .rightMenuContainer {
+        padding-inline: 2rem;
+    }
+
+    .navLink {
+        font-size: 2.8rem;
+    }
+
+    .animatedNavLink {
+        font-size: 2.8rem;
+    }
+
+    .leftMenuContainer {
+        padding-left: 2rem;
+    }
+
+    .animatedLeftContainer {
+        padding-left: 2rem;
+    }
+    .footerMenuContainer {
+        left: 2rem;
+    }
+}
 
 @keyframes mobileBar1Slide {
     0% {
@@ -459,5 +589,146 @@
     }
     100% {
         bottom: 21px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .nav {
+        height: 4.5rem;
+    }
+
+    .mobileLogo {
+        font-size: 3.5rem;
+        font-family: sans-serif;
+    }
+
+    .ctaButton {
+        width: 100px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+
+    .ctaButton > span {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctaButton > span:hover {
+        box-shadow: inset 0px -200px 0px 0px black;
+    }
+
+
+    .menu, .activeMenu {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bar1, .bar2, .activeBar1, .activeBar2 {
+        width: 40px;
+    }
+
+    .bar1 {
+        top: 20px;
+        animation: smallBar1Slide 1s ease forwards;
+        animation-delay: 1s;
+    }
+    .bar2 {
+        bottom: 20px;
+        animation: smallBar2Slide 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .activeBar1 {
+        top: 15px;
+    }
+    .activeBar2 {
+        top: 15px;
+    }
+}
+
+@keyframes smallBar1Slide {
+    0% {
+        top: 20px;
+    }
+    100% {
+        top: 15px;
+    }
+}
+@keyframes smallBar2Slide {
+    0% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .nav {
+        height: 4rem;
+    }
+
+    .mobileLogo {
+        font-size: 3rem;
+        font-family: sans-serif;
+    }
+
+    .rightContainer {
+        margin-right: 1rem;
+    }
+
+    .ctaButton {
+        width: 85px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+
+    .ctaButton > span {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctaButton > span:hover {
+        box-shadow: inset 0px -200px 0px 0px black;
+    }
+
+
+    .menu, .activeMenu {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bar1, .bar2, .activeBar1, .activeBar2 {
+        width: 40px;
+    }
+
+    .bar1 {
+        top: 20px;
+        animation: smallBar1Slide 1s ease forwards;
+        animation-delay: 1s;
+    }
+    .bar2 {
+        bottom: 20px;
+        animation: smallBar2Slide 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .activeBar1 {
+        top: 15px;
+    }
+    .activeBar2 {
+        top: 15px;
     }
 }
