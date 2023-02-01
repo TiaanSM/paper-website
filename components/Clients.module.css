@@ -1,0 +1,206 @@
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding-inline: 3rem;
+}
+
+.contentContainer {
+    width: calc(100vw - 4rem);
+}
+
+.textContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.textContainer2 {
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+
+.clientL {
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+}
+
+.client1 {
+    position: absolute;
+    right: 60%;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+}
+
+.animatedClient1 {
+    position: absolute;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+    animation: slideRight1 1s ease forwards;
+}
+
+.client2 {
+    position: absolute;
+    right: 37.5%;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+}
+
+.animatedClient2 {
+    position: absolute;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+    animation: slideRight2 1s ease forwards;
+}
+
+.client3 {
+    position: absolute;
+    right: 69%;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+}
+
+.animatedClient3 {
+    position: absolute;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+    animation: slideRight3 1s ease forwards;
+}
+
+.client4 {
+    position: absolute;
+    right: 38.5%;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+}
+
+.animatedClient4 {
+    position: absolute;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+    animation: slideRight4 1s ease forwards;
+}
+
+.client5 {
+    position: absolute;
+    right: 50%;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+}
+
+.animatedClient5 {
+    position: absolute;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+    animation: slideRight5 1s ease forwards;
+}
+
+.client6 {
+    position: absolute;
+    right: 22%;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+}
+
+.animatedClient6 {
+    position: absolute;
+    right: 0%;
+    color: white;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    padding-inline: 0.8rem;
+    animation: slideRight6 1s ease forwards;
+}
+
+
+@keyframes slideRight1 {
+    from {
+        right: 60%;
+    }
+    to {
+        right: 40%;
+    }
+}
+
+@keyframes slideRight2 {
+    from {
+        right: 35%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes slideRight3 {
+    from {
+        right: 69%;
+    }
+    to {
+        right: 50%;
+    }
+}
+
+@keyframes slideRight4 {
+    from {
+        right: 35%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes slideRight5 {
+    from {
+        right: 50%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes slideRight6 {
+    from {
+        right: 22%;
+    }
+    to {
+        right: 0%;
+    }
+}

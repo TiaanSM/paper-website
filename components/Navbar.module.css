@@ -88,13 +88,13 @@
 .bar1 {
     top: 17px;
     animation: bar1Slide 0.5s ease forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 .bar2 {
     bottom: 17px;
     animation: bar2Slide 0.5s ease forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 .activeMenu {
@@ -165,10 +165,10 @@
     position: fixed; 
     top: 0;
     left: 0;
-    animation: menuClickClosed 2s ease forwards;
+    animation: menuClickClosed 1.2s ease forwards;
     overflow: hidden;
     visibility: hidden;
-    transition: visibility 1.7s;
+    transition: visibility 1.5s;
 }
 
 @keyframes menuClick {
@@ -188,7 +188,7 @@
         opacity: 1;
         display: block;
     }
-    50% {
+    75% {
         opacity: 1;
         display: block;
     }
@@ -304,7 +304,7 @@
     transform: translate(0,0);
     color: white;
     transition: all 0.5s ease;
-    animation: revealRev 0.5s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
+    animation: revealRev 0.6s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
 }
 
 .animatedNavLink {
@@ -316,7 +316,7 @@
     cursor: pointer;
     transition: all 0.5s ease;
     transform: translate(0,100%);
-    animation: reveal 0.7s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
+    animation: reveal 0.6s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
 }
 
 .linkSpan > .animatedNavLink:nth-child(1):hover {
@@ -383,12 +383,21 @@
 
 @media (max-width: 850px) {
 
+    .leftMenuContainer {
+        padding-left: 2.5rem;
+        width: 350px;
+    }
+
     .animatedLeftContainer {
         padding-left: 2.5rem;
         width: 350px;
     }
     .bigLogoContainer {
         padding-bottom: 2rem;
+    }
+
+    .navLink {
+        font-size: 3.5rem;
     }
     .animatedNavLink {
         font-size: 3.5rem;
@@ -407,6 +416,10 @@
 @media (max-width: 650px) {
     .bigLogo {
         font-size: 8rem;
+    }
+
+    .navLink {
+        font-size: 3rem;
     }
     .animatedNavLink {
         font-size: 3rem;
