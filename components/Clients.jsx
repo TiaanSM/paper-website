@@ -1,44 +1,75 @@
 "use client"
 import styles from './Clients.module.css';
 import { useInView } from 'react-intersection-observer';
-import { useRef, useState } from 'react';
+import ClientItem from './ClientItem';
+
+// @refresh reset
 
 const Clients = () => {
 
     const { ref, inView, entry } = useInView({
-        /* Optional options */
-        threshold: 1.00,
+        threshold: 0.70,
         triggerOnce: true
     });
-      console.log(inView);
+    console.log(inView);
 
   return (
-    <section className={styles.mainContainer}>
+    <section className={styles.mainContainer} ref={ref}>
 
         <h3 className={styles.title}>CLIENTS</h3>
 
-        <div className={styles.contentContainer} ref={ref}>
+        <div className={styles.contentContainer} >
 
             <div className={styles.textContainer}>
                 <span className={styles.clientL}>FOCUS.</span>
-                <span className={inView ? styles.animatedClient1 : styles.client1}>SABC.</span>
-                <span className={inView ? styles.animatedClient2 : styles.client2}>SIBERIA</span>
+                <ClientItem 
+                    client="SABC."
+                    inView={inView} 
+                    start="60%"
+                    end="40%"
+                />
+                <ClientItem 
+                    client="SIBERIA."
+                    inView={inView} 
+                    start="35%"
+                    end="0%"
+                />
             </div>
 
             <div className={styles.textContainer}>
                 <span className={styles.clientL}>IOTA.</span>
-                <span className={inView ? styles.animatedClient3 : styles.client3}>BIKE.</span>
-                <span className={inView ? styles.animatedClient4 : styles.client4}>MUSIMANE</span>
+                <ClientItem 
+                    client="BIKE."
+                    inView={inView} 
+                    start="69%"
+                    end="50%"
+                />
+                <ClientItem 
+                    client="MUSIMANE"
+                    inView={inView} 
+                    start="35%"
+                    end="0%"
+                />
             </div>
 
             <div className={styles.textContainer}>
                 <span className={styles.clientL}>DORRY.</span>
-                <span className={inView ? styles.animatedClient5 : styles.client5}>JACKSON</span>
+                <ClientItem 
+                    client="JACKSON"
+                    inView={inView} 
+                    start="50%"
+                    end="0%"
+                />
             </div>
 
             <div className={styles.textContainer2}>
                 <span className={styles.clientL}>CONTROLS</span>
-                <span className={inView ? styles.animatedClient6 : styles.client6}>ITACHI.</span>
+                <ClientItem 
+                    client="ITACHI."
+                    inView={inView} 
+                    start="22%"
+                    end="0%"
+                />
             </div>
 
         </div>

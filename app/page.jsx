@@ -1,15 +1,23 @@
 "use client"
 import styles from './page.module.css';
-
 import Clients from '@/components/Clients.jsx';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 3000);
+  }, []);
+
   return (
-    <main>
-      
+    <main>      
       <div className={styles.dummy}></div>
       <div className={styles.dummy}></div>
-      <Clients />
+      {show ? <Clients /> : null}
     </main>
   )
 }

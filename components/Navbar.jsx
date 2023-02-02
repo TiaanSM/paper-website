@@ -2,7 +2,7 @@
 
 import styles from './Navbar.module.css'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const Navbar = () => {
 
