@@ -1,6 +1,6 @@
 "use client"
 import styles from './page.module.css';
-import Clients from '@/components/Clients.jsx';
+import Clients from '@/components/Clients';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -13,11 +13,15 @@ export default function Home() {
     }, 3000);
   }, []);
 
+
   return (
     <main>      
       <div className={styles.dummy}></div>
       <div className={styles.dummy}></div>
       {show ? <Clients /> : null}
+      <div className={styles.dummy}></div>
+      <div className={styles.dummy}></div>
+
     </main>
   )
 }

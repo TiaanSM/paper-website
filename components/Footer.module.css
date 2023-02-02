@@ -1,0 +1,60 @@
+.footer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+.ctaContainer {
+    width: 100vw;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+}
+
+.cta {
+    font-size: 7.8rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding-inline: 2.8rem;
+    padding-top: 2rem;
+    color: white;
+}
+
+.linkContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socialContainer {
+    padding-left: 2.8rem;
+    padding-right: 2.3rem; 
+}
+
+.socialLink, .policyLink {
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.socialLink:hover, .policyLink:hover {
+    color: gray;
+    transition: color 0.8s;
+}
+
+.policyContainer {
+    padding-top: 2.1rem;
+}
+
+.copyright {
+    padding-inline: 2.8rem;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 3rem;
+}

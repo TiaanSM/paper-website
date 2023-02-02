@@ -212,31 +212,16 @@
 
 .leftMenuContainer {
     width: 410px;
-    animation: slideReverse 1s ease forwards;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transition: all 1s;
 }
 
 .animatedLeftContainer {
     width: 410px;
-    animation: leftMenuSlide 1s ease forwards;
-}
-
-@keyframes leftMenuSlide {
-    from {
-        opacity: 0;
-        margin-bottom: 2rem;
-    }
-    to {
-        opacity: 1;
-        margin-bottom: 0;
-    }
-}
-@keyframes slideReverse {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+    opacity: 1;
+    margin-bottom: 0;
+    transition: all 1s;
 }
 
 .bigLogoContainer {
