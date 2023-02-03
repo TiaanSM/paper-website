@@ -1,0 +1,67 @@
+.header {
+    width: 100vw;
+    height: 260vh;
+    z-index: -10;
+}
+
+.titleContainer {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleSpan {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    height: 90px;
+    z-index: -10;
+}
+
+.title {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 300;
+    font-family: sans-serif;
+    display: block;
+    transform: translate(0,100%);
+    overflow: hidden;
+}
+
+.animatedTitle {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 300;
+    font-family: sans-serif;
+    display: block;
+    transform: translate(0,0);
+    transition: all 1s ease;
+}
+
+.videoContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    width: calc(100vw - 8rem);
+    background-color: black;
+}
+
+.descContainer {
+    width: 100vw;
+    height: 80vh;
+}
+
+.desc {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding-inline: 4rem;
+    padding-top: 2rem;
+}

@@ -1,6 +1,9 @@
 "use client"
 import styles from './page.module.css';
+import Header from '@/components/Header';
 import Clients from '@/components/Clients';
+import Services from '@/components/Services';
+import Carousel from '@/components/Carousel';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -16,12 +19,14 @@ export default function Home() {
 
   return (
     <main>      
+      {show ? <Header /> : null}
       <div className={styles.dummy}></div>
       <div className={styles.dummy}></div>
       {show ? <Clients /> : null}
       <div className={styles.dummy}></div>
+      <Services />
       <div className={styles.dummy}></div>
-
+      <Carousel />
     </main>
   )
 }

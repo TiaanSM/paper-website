@@ -1,0 +1,73 @@
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.carousel {
+    width: calc(100vw - 7rem);
+    height: 88vh;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlsContainer {
+    width: 30rem;
+    height: 100%;
+    border-right: 1px solid gray;
+}
+
+.titleContainer {
+    width: 100%;
+    height: 80%;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-top: 3rem;
+    color: white;
+}
+
+.carouselImages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentContainer {
+    width: 25rem;
+    height: 90%;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+}
+
+.imageContainer {
+    width: 100%;
+    height: calc(100% - 3rem);
+    background-color: white;
+}
+
+.brandContainer {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+}
