@@ -1,13 +1,14 @@
 "use client"
 import styles from './Footer.module.css';
-
+import CursorTracker from './CursorTracker';
 
 const Footer = () => {
   return (
 
     <footer className={styles.footer}>
-
+        
         <div className={styles.ctaContainer}>
+            <CursorTracker />
             <h4 className={styles.cta}>Let's talk.</h4>
         </div>
 

@@ -5,6 +5,11 @@ import Footer from '@/components/Footer'
 
 export default function RootLayout({ children }) {
 
+  // TODO:
+  // clamp texts, responsiveness, animation triggers, load page, video, 
+  // navbar colors, background-colors, links, carousel functionality, other pages.
+  // mix blend mode for navbar icons,
+
   return (
     <html lang="en">
       {/*

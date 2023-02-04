@@ -19,13 +19,9 @@ export default function Home() {
 
   return (
     <main>      
-      {show ? <Header /> : null}
-      <div className={styles.dummy}></div>
-      <div className={styles.dummy}></div>
-      {show ? <Clients /> : null}
-      <div className={styles.dummy}></div>
+      {show ? <Header /> : null }
       <Services />
-      <div className={styles.dummy}></div>
+      {show ? <Clients /> : null }
       <Carousel />
     </main>
   )

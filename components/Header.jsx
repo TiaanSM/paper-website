@@ -8,6 +8,7 @@ const Header = () => {
         threshold: 0.50,
         triggerOnce: true
     });
+    console.log(inView) // remove not triggered inview but op page load complete.
 
   return (
     <header className={styles.header}>
