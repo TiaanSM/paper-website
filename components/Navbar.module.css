@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    background-color: transparent;
 }
 
 .contentContainer {
@@ -16,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
 
 .logo {
@@ -23,6 +25,8 @@
     font-size: 1.45rem;
     font-family: sans-serif;
     font-weight: 600;
+    mix-blend-mode: difference;
+    color: white;
 }
 
 .reg {
@@ -34,6 +38,8 @@
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 600;
+    color: white;
+    mix-blend-mode: difference;
 }
 
 .rightContainer {
@@ -41,6 +47,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
 }
 
 
@@ -51,7 +58,7 @@
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    border: 1px solid black; 
+    border: 1px solid white; 
     margin-right: 2rem;
 }
 
@@ -63,6 +70,7 @@
     position: absolute;
     transition: all 0.5s ease;
     box-shadow: inset 0px 0px 0px 0px black;
+    color: white;
     mix-blend-mode: difference;
 }
 
@@ -78,15 +86,17 @@
     height: 36px;
     position: relative;
     cursor: pointer;
-    z-index: 50;
+    mix-blend-mode: difference;
+    background-color: transparent;
 }
 
 .bar1, .bar2 {
     display: block;
     width: 36px;
     height: 1px;
-    background-color: black;
+    background-color: white;
     position: absolute;
+    mix-blend-mode: difference;
 }
 
 .bar1 {
@@ -419,6 +429,8 @@
     .mobileLogo {
         font-size: 4rem;
         font-family: sans-serif;
+        color: white;
+        mix-blend-mode: difference;
     }
 
     .menu, .activeMenu {

@@ -3,6 +3,7 @@
     height: 100vh;
     position: relative;
     background-color: black;
+    mix-blend-mode: difference;
 }
 
 .ctaContainer {

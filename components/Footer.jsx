@@ -3,6 +3,11 @@ import styles from './Footer.module.css';
 import CursorTracker from './CursorTracker';
 
 const Footer = () => {
+
+    const addCursor = () => {
+        
+    }
+
   return (
 
     <footer className={styles.footer}>

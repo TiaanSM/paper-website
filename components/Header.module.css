@@ -1,7 +1,8 @@
 .header {
     width: 100vw;
     height: 260vh;
-    z-index: -10;
+    background-color: white;
+    mix-blend-mode: difference;
 }
 
 .titleContainer {
@@ -11,14 +12,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-inline: 1rem;
 }
 
 .titleSpan {
     display: block;
     overflow: hidden;
     margin: 0;
-    height: 90px;
-    z-index: -10;
+    height: auto;
 }
 
 .title {
@@ -33,8 +34,9 @@
 
 .animatedTitle {
     text-align: center;
-    font-size: 5.5rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 0.07692307692307687rem + 7.58974358974359vw, 5.2rem);
+    font-weight: 400;
     font-family: sans-serif;
     display: block;
     transform: translate(0,0);
@@ -46,6 +48,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 .video {
@@ -56,12 +59,66 @@
 .descContainer {
     width: 100vw;
     height: 80vh;
+    padding-inline: 4rem;
 }
 
 .desc {
-    font-size: 2rem;
+    width: 100%;
+    font-size: 14px;
+    font-size: clamp(14px, 0.6153846153846154rem + 2.051282051282051vw, 2rem);
     font-family: sans-serif;
     font-weight: 300;
-    padding-inline: 4rem;
     padding-top: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .video {
+        width: calc(100vw - 4rem);
+    }
+    .descContainer {
+        padding-inline: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .video {
+        width: calc(100vw - 3rem);
+    }
+    .descContainer {
+        padding-inline: 1.5rem;
+    }
+
+    .desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .titleContainer {
+        height: 70vh;
+    }
+
+    .videoContainer {
+        height: 60vh;
+    }
+    .video {
+        width: 100vw;
+    }
+
+    .descContainer {
+        padding-inline: 0.8rem;
+        width: 92%;
+    }
+
+    .desc {
+        font-size: 1rem;
+        font-size: clamp(1rem, -0.13898305084745766rem + 6.508474576271187vw, 2.2rem);
+    }
+}
+
+@media (max-width: 320px) {
+    .titleContainer {
+        height: 60vh;
+    }
 }

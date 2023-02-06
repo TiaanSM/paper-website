@@ -11,7 +11,8 @@ const ClientItem = (props) => {
         fontSize: '4.5rem',
         fontFamily: 'sans-serif',
         paddingInline: '0.8rem',
-        transition: 'all 1s ease'
+        transition: 'all 1s ease',
+        backgroundColor: 'transparent'
     }
 
   return (

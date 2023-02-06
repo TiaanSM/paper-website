@@ -3,6 +3,8 @@
     height: 200vh;
     display: flex;
     justify-content: center;
+    background-color: white;
+    mix-blend-mode: difference;
 }
 
 .mainContainer {
