@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
   // TODO:
   // clamp texts, responsiveness, animation triggers, load page, video, 
   // navbar colors, background-colors, links, carousel functionality, other pages.
-  // mix blend mode for navbar icons,
+  // sticky navbar,
 
   return (
     <html lang="en">
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
        <body>
-        <Navbar />
+       <Navbar />
         {children}
         <Footer />
        </body>

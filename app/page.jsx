@@ -18,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <main>      
+    <main className={styles.main}>      
       {show ? <Header /> : null }
       <Services />
       {show ? <Clients /> : null }
