@@ -75,13 +75,163 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: rgb(34, 31, 31);
 }
 
 .form {
-    width: 50vw;
-    height: 80%;
-    background-color: rgb(60, 114, 96);
+    width: 45.5vw;
     position: absolute;
-    right: 10.5rem;
+    right: 9.5rem;
+}
+
+.inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+
+.input {
+    width: 100%;
+    padding: 1.4rem 0;
+    border-top: 1px solid rgb(196, 196, 196);
+    color: white;
+    font-family: sans-serif;
+}
+.input:nth-child(4) {
+    border-bottom: 1px solid white;
+}
+
+.termsContainer {
+    width: 100%;
+}
+
+.termsText {
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+.btnContainer {
+    width: 5.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.noBtn , .yesBtn {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0.2rem 0.4rem;
+}
+
+.noBtn {
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.submitContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.submitText {
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 14rem;
+    line-height: 1.2rem;
+}
+
+.submitBtn {
+    padding: 1.3rem 5.8rem;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 0px white;
+    transition: all 0.4s ease;
+}
+.submitBtn:hover {
+    box-shadow: inset 0px -4rem 0px 0px white;
+    color: black;
+}
+
+
+.aside {
+    width: 100vw;
+    height: 90vh;
+}
+
+.asideTitle {
+    color: lightgray;
+    padding-inline: 3rem;
+    font-family: sans-serif;
+    font-size: 13.5px;
+    display: block;
+}
+
+.socialsContainer {
+    padding-left: 3rem;
+    padding-top: 2.5rem;
+    width: 30rem;
+}
+.socialsContainer:hover > .socialLink {
+    color: #212529;
+    transition: all 0.5s ease;
+}
+
+.socialsContainer > .socialLink:hover {
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.socialLink {
+    color: white;
+    font-size: 4.5rem;
+    line-height: 4.3rem;
+    font-family: sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.policyContainer {
+    width: 100%;
+    padding-inline: 3rem; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;   
+}
+
+.policyLink {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.policyLink:hover {
+    color: #212529;
+}
+
+.copyright {
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-top: 3rem;
 }

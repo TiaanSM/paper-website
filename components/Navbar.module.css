@@ -26,8 +26,6 @@
     font-size: 1.45rem;
     font-family: sans-serif;
     font-weight: 600;
-    mix-blend-mode: difference;
-    color: white;
 }
 
 .reg {
@@ -39,8 +37,6 @@
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: white;
-    mix-blend-mode: difference;
 }
 
 .rightContainer {

@@ -1,0 +1,36 @@
+.main {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    width: calc(100vw - 5.6rem);
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    display: flex;
+}
+
+.sideTextContainer {
+    width: 40%;
+}
+
+.sideText {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: end;
+    width: 16rem;
+}
+
+.mainCardContainer {
+    width: 60%;
+}
+
+.cardContainer {
+    border-top: 1px solid white;
+    height: 90vh;
+}

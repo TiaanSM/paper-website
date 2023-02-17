@@ -24,32 +24,45 @@ export default function Work() {
 
         <section className={styles.section}>
             <form className={styles.form}>
-                <div>
-                    <span>Name</span>
-                    <span>Email address</span>
-                    <span>Company</span>
-                    <span>Tell us about your project</span>
+                <div className={styles.inputContainer}>
+                    <span className={styles.input}>Name</span>
+                    <span className={styles.input}>Email address</span>
+                    <span className={styles.input}>Company</span>
+                    <span className={styles.input}>Tell us about your project</span>
                 </div>
-                <div>
-                    <span>I have read and agree with Paper's privacy policy.</span>
-                    <div>
-                        <span>NO</span>
-                        <span>YES</span>
+                <div className={styles.termsContainer}>
+                    <span className={styles.termsText}>I have read and agree with Paper's privacy policy.</span>
+                    <div className={styles.btnContainer}>
+                        <span className={styles.noBtn}>NO</span>
+                        <span className={styles.yesBtn}>YES</span>
                     </div>
                 </div>
-                <div>
-                    <p>This site is protected by reCAPTCHA
+                <div className={styles.submitContainer}>
+                    <p className={styles.submitText}>This site is protected by reCAPTCHA
                         and the Google Privacy Policy and
                         Terms of Service apply.
                     </p>
-                    <button>SEND</button>
+                    <button className={styles.submitBtn}>SEND</button>
                 </div>
             </form>
         </section>
 
-        <aside>
-            <span>FOLLOW US</span>
+        <aside className={styles.aside}>
+            <span className={styles.asideTitle}>FOLLOW US</span>
+            <ul className={styles.socialsContainer}>
+                <li className={styles.socialLink}>BEHANCE</li>
+                <li className={styles.socialLink}>TWITTER</li>
+                <li className={styles.socialLink}>INSTAGRAM</li>
+                <li className={styles.socialLink}>LINKDIN</li>
+            </ul>
         </aside>
+
+        <div className={styles.policyContainer}>
+            <span className={styles.policyLink}>PRIVACY POLICY</span>
+            <span className={styles.policyLink}>COOKIES POLICY</span>
+            <span className={styles.policyLink}>TERMS & CONDITIONS</span>
+            <span className={styles.copyright}>&copy;2023 Paper. All rights reserved</span>
+        </div>
 
     </main>
   )
