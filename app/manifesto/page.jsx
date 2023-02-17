@@ -2,7 +2,7 @@
 import styles from './page.module.css';
 import ManifestoCard from '@/components/ManifestoCard';
 
-export default function Work() {
+export default function Manifesto() {
 
   return (
     <main className={styles.main}>  

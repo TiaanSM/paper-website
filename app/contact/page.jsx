@@ -1,7 +1,7 @@
 "use client"
 import styles from './page.module.css';
 
-export default function Work() {
+export default function Contact() {
 
   return (
     <main className={styles.main}>    
