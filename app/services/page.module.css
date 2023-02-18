@@ -1,0 +1,30 @@
+.main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.container {
+    width: calc(100% - 6rem);
+}
+
+.titleContainer {
+    width: 100%;
+    height: 125vh;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+}
+
+.title {
+    color: white;
+    font-size: 4.95rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 4.95rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 2.8rem;
+}
