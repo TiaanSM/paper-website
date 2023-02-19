@@ -47,7 +47,22 @@
     background-color: antiquewhite;
 }
 
+.listContainer {
+    padding: 2rem 0 4rem 0;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .listItem {
+    padding-left: 3rem;
     color: white;
-    padding: 2rem;
+    position: relative;
+    right: 3rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    line-height: 2rem;
 }

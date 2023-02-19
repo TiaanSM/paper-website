@@ -6,6 +6,13 @@
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
     width: calc(100vw - 5.6rem);
 }
 
@@ -36,7 +43,7 @@
 
 
 .contentContainer {
-    width: 100%;
+    width: calc(100vw - 5.6rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +72,7 @@
     font-weight: 300;
     padding-left: 3rem;
     padding-bottom: 1.5rem;
-    margin-top: 28rem;
+    margin-top: 31rem;
 }
 
 .contentDesc {
@@ -76,7 +83,7 @@
 
 
 .peopleContainer {
-    width: 100%;
+    width: calc(100vw - 5.6rem);
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
@@ -96,13 +103,14 @@
 }
 
 .peopleText {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: sans-serif;
-    width: 12rem;
+    width: 14rem;
     text-align: right;
     position: absolute;
     right: 0;
     bottom: 0;
+    letter-spacing: -2px;
 }
 
 .peopleImage2 {
@@ -113,7 +121,7 @@
 
 
 .mainTextContainer {
-    width: 100%;
+    width: calc(100vw - 5.6rem);
     display: flex;
     justify-content: space-between;
 }
@@ -148,7 +156,7 @@
 
 
 .bottomContainer {
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     background-color: black;
 }
@@ -159,11 +167,13 @@
     font-family: sans-serif;
     font-weight: 300;
     padding-bottom: 6rem;
+    padding-inline: 2.8rem;
 }
 
 .bottomTextContainer {
     display: flex;
     justify-content: flex-start;
+    padding-inline: 2.8rem;
 }
 
 .subjectContainer {

@@ -52,8 +52,7 @@ export default function Contact() {
                     </p>
                 </div>
             </div>
-
-
+        
             <div className={styles.bottomContainer}>
                 <h5 className={styles.bottomTitle}>An important commitment to our clients.</h5>
                 <div className={styles.bottomTextContainer}>

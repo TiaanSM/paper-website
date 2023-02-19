@@ -18,25 +18,51 @@ export default function Services() {
           number="01."
           title="Strategy and consultancy."
           desc="The strategy and consultancy project is the master plan we develop to accomplish your objectives. We listen, understand and analyse the needs of the business. Then we define a strategy to deliver optimised results so you can move forward."
-          listItems="."
+          listItems={ 
+            ['- Strategy & Consultancy Project',
+            '- Product Strategy',
+            '- Brand Strategy',
+            '- Research Strategy',
+            '- Analytics Strategy',
+            '- Technical Consultancy',
+            '- Content Strategy'] } 
         />
 
         <ServicesCard 
           number="02."
           title="Digital products."
           desc="Digital products are the apps, tools, sites, systems —the list is long— that you use to watch, buy, create, control and manage things digitally. We create functional, intuitive, engaging and visually stunning products to elevate the user's perception of your brand. We also make them scalable so they have the potential to grow and expand."
+          listItems={ 
+          ['- Product Audit',
+          '- Service Design',
+          '- Research',
+          '- Visual Identity',
+          '- UX/UI Design',
+          '- Motion Design',
+          '- UX Writing'] } 
         />
 
         <ServicesCard 
           number="03."
           title="Digital-First Branding."
           desc="We define and create digital brands with soul and personality that transmit those intangible values that make the brand recognisable and remembered in many different ways."
+          listItems={ 
+          ['- Brand Identity',
+          '- Digital Brand Environment',
+          '- Motion Branding',
+          '- Content Strategy'] } 
         />
 
         <ServicesCard 
           number="04."
           title="Technology."
           desc="We think technology is a fundamental asset serving the project, and it's crucial during the implementation process. With this in mind, we can define the project's development and choose the right technology to offer the best results to our clients."
+          listItems={ 
+          ['- Technical Consultancy',
+          '- Cloud Services',
+          '- Creative Frontend',
+          '- Backend Development',
+          '- AI oriented Projects'] } 
         />
 
       </div>
