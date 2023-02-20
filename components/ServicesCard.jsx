@@ -19,7 +19,7 @@ const servicesCard = (props) => {
                     <ul className={styles.list}>
                         {props.listItems.map((item) => {
                             return (
-                                <li className={styles.listItem} key={item.toString()}>&bull;{item}</li>
+                                <li className={styles.listItem} key={item.toString()}>{item}</li>
                             )
                         })}
                     </ul>

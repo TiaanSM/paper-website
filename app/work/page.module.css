@@ -38,7 +38,8 @@
 }
 
 .filter {
-    font-size: 3rem;
+    font-size: 1rem;
+    font-size: clamp(1rem, -0.46496815286624193rem + 4.076433121019108vw, 3rem);
     font-family: sans-serif;
     font-weight: 300;
     cursor: pointer;
@@ -60,15 +61,15 @@
 }
 
 .divider {
-    font-size: 3rem;
+    font-size: 1rem;
+    font-size: clamp(1rem, -0.46496815286624193rem + 4.076433121019108vw, 3rem);
     font-family: sans-serif;
     font-weight: 300;
-    padding: 0 0.7rem 0 1rem;
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 .section {
     width: 100%;
-    height: 120vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -76,9 +77,92 @@
 
 .bigSection {
     width: 100%;
-    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5rem 0;
+}
+
+
+
+@media (max-width: 750px) {
+    .header {
+        height: 55vh;
+    }
+    .container {
+        width: calc(100vw - 3rem);
+    }
+    .filterAmount {
+        display: none;
+    }
+    .textContainer:nth-child(1) {
+        padding-bottom: 1rem;
+    }
+    .filter {
+        font-size: 1.6rem;
+    }
+    .section {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .filter {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .textContainer:nth-child(1) > .divider:nth-child(4) {
+        display: none;
+    }
+    .textContainer:nth-child(2) > .filter:nth-child(5) {
+        display: none;
+    }
+    .textContainer:nth-child(2) > .divider:nth-child(4) {
+        display: none;
+    }
+    .textContainer:nth-child(1) {
+        padding-bottom: 0;
+    }
+
+    .textContainer {
+        width: 85%;
+        flex-wrap: wrap;
+    }
+
+    .filter {
+        font-size: 1rem;
+        font-size: clamp(1rem, 0.05084745762711862rem + 5.423728813559322vw, 2rem);
+    }
+
+    .divider {
+        padding-inline: 0.7rem;
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: calc(100vw - 2rem);
+    }
+    .section {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .bigSection {
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+
+    .cardContainer {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 340px) {
+    .textContainer {
+        width: 100%;
+    }
+    .filter {
+        font-size: 1.2rem;
+    }
 }

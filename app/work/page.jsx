@@ -4,6 +4,8 @@ import WorkCard from '@/components/WorkCard';
 
 export default function Work() {
 
+  const isMobile = window.innerWidth > 575;
+
   return (
     <main className={styles.main}>    
     <div className={styles.container}>
@@ -35,50 +37,50 @@ export default function Work() {
       </header>
 
       <section className={styles.section}>
-        <div>
-            <WorkCard height="100%" title="BRAND NAME HERE" />
+        <div className={styles.cardContainer}>
+            <WorkCard ratio={isMobile ? "1/1" : "2/3.25"} title="BRAND NAME HERE" />
         </div>
-        <div>
-            <WorkCard height="65%" title="BRAND NAME HERE" />
-        </div>
-      </section>
-
-      <div className={styles.bigSection}>
-        <WorkCard height="100%" title="BRAND NAME HERE" />
-      </div>
-
-      <section className={styles.section}>
-        <div>
-            <WorkCard height="65%" title="BRAND NAME HERE" />
-        </div>
-        <div>
-            <WorkCard height="100%" title="BRAND NAME HERE" />
+        <div className={styles.cardContainer}>
+            <WorkCard ratio="1/1"  title="BRAND NAME HERE" />
         </div>
       </section>
 
       <div className={styles.bigSection}>
-        <WorkCard height="100%" title="BRAND NAME HERE" />
+        <WorkCard ratio="16/11" title="BRAND NAME HERE" />
       </div>
 
       <section className={styles.section}>
-        <div>
-            <WorkCard height="100%" title="BRAND NAME HERE" />
+        <div className={styles.cardContainer}>
+            <WorkCard ratio="1/1" title="BRAND NAME HERE" />
         </div>
-        <div>
-            <WorkCard height="65%" title="BRAND NAME HERE" />
+        <div className={styles.cardContainer}>
+            <WorkCard ratio="2/3.25" title="BRAND NAME HERE" />
         </div>
       </section>
 
       <div className={styles.bigSection}>
-        <WorkCard height="100%" title="BRAND NAME HERE" />
+        <WorkCard ratio="16/11" title="BRAND NAME HERE" />
       </div>
 
       <section className={styles.section}>
-        <div>
-            <WorkCard height="65%" title="BRAND NAME HERE" />
+        <div className={styles.cardContainer}>
+            <WorkCard ratio="2/3.25" title="BRAND NAME HERE" />
         </div>
-        <div>
-            <WorkCard height="100%" title="BRAND NAME HERE" />
+        <div className={styles.cardContainer}>
+            <WorkCard ratio="1/1" title="BRAND NAME HERE" />
+        </div>
+      </section>
+
+      <div className={styles.bigSection}>
+        <WorkCard ratio="16/11" title="BRAND NAME HERE" />
+      </div>
+
+      <section className={styles.section}>
+        <div className={styles.cardContainer}>
+            <WorkCard ratio="1/1" title="BRAND NAME HERE" />
+        </div>
+        <div className={styles.cardContainer}>
+            <WorkCard ratio="2/3.25" title="BRAND NAME HERE" />
         </div>
       </section>
 

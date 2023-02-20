@@ -59,3 +59,53 @@
     position: absolute;
     bottom: 3rem;
 }
+
+@media (max-width: 650px) {
+
+    .cta {
+        padding-inline: 1.5rem;
+        font-size: 6rem;
+    }
+    .socialContainer {
+        padding-left: 1.5rem;
+    }
+    .copyright {
+        padding-inline: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .ctaContainer {
+        justify-content: center;
+    }
+    .cta {
+        font-size: 5rem;
+    }
+    .socialContainer {
+        display: none;
+    }
+    .policyContainer {
+        display: none;
+    }
+    .copyright {
+        text-align: center;
+        padding-inline: 0;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        height: 60vh;
+    }
+    .ctaContainer {
+        height: 40vh;
+    }
+    .cta {
+        font-size: 3.5rem;
+    }
+    .copyright {
+        font-size: 1rem;
+    }
+}

@@ -3,7 +3,7 @@ const WorkCard = (props) => {
 
     const cardStyle = {
         width: '100%',
-        height: props.height,
+        aspectRatio: props.ratio,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
