@@ -1,5 +1,6 @@
 "use client"
 import styles from './page.module.css';
+import Clients from '@/components/Clients';
 
 export default function Contact() {
 
@@ -11,7 +12,7 @@ export default function Contact() {
                 <h1 className={styles.headerTitle}>We are humans creating<br/> remarkable digital products<br/> and brands for other humans.</h1>
                 <img src="" alt="" className={styles.headerImage} />
                 <h2 className={styles.headerDesc}>
-                Paper is a strategic design agency focused on providing high-quality digital services for global<br/> companies. Our team consists of a superb blend of thinkers, strategists, designers,<br/> researchers, developers and organisers. Not too big, not too small, quite sensible and<br/> completely independent.
+                Paper is a strategic design agency focused on providing high-quality digital services for global companies. Our team consists of a superb blend of thinkers, strategists, designers, researchers, developers and organisers. Not too big, not too small, quite sensible and completely independent.
                 </h2>
             </header>
 
@@ -52,6 +53,8 @@ export default function Contact() {
                     </p>
                 </div>
             </div>
+
+            <Clients/>
         
             <div className={styles.bottomContainer}>
                 <h5 className={styles.bottomTitle}>An important commitment to our clients.</h5>

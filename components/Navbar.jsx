@@ -1,8 +1,6 @@
 "use client"
-
 import styles from './Navbar.module.css'
-
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
 
@@ -15,9 +13,52 @@ const Navbar = () => {
     }
 
     const isMobile = window.innerWidth < 575;
+
+    // navbar sticky
+  
+    let oldScrollY = 0;
+
+  const [direction, setDirection] = useState('up');
+
+  const controlDirection = () => {
+    if(window.scrollY > oldScrollY) {
+        setDirection('down');
+    } else {
+        setDirection('up');
+    }
+    oldScrollY = window.scrollY;
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlDirection);
+    return () => {
+        window.removeEventListener('scroll', controlDirection);
+    };
+  },[]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlDirection);
+
+    return () => window.removeEventListener('scroll', controlDirection);
+
+  }, []);
+
+  const navStyles = {
+    width: '100vw',
+    height: '6rem',
+    backgroundColor: 'white',
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    position: 'fixed',
+    zIndex: '100',
+    transition: 'top 0.6s ease',
+    overflow: 'visible',
+    boxShadow: '1px 1px 6px lightgray'
+  }
     
   return (
-    <div className={styles.nav}>
+    <div style={{...navStyles, top: direction === 'up' ? '0' : '-6rem' }}>
 
       <div className={styles.contentContainer}>
 

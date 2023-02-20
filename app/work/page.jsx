@@ -38,7 +38,7 @@ export default function Work() {
 
       <section className={styles.section}>
         <div className={styles.cardContainer}>
-            <WorkCard ratio={isMobile ? "1/1" : "2/3.25"} title="BRAND NAME HERE" />
+            <WorkCard ratio="2/3.25" title="BRAND NAME HERE" />
         </div>
         <div className={styles.cardContainer}>
             <WorkCard ratio="1/1"  title="BRAND NAME HERE" />
