@@ -267,35 +267,146 @@
 }
 
 @media (max-width: 575px) {
+
+    .header {
+        width: 100vw;
+    }
+    .headerTitle {
+        font-size: 2rem;
+        font-size: clamp(2rem, 0.36363636363636354rem + 8.727272727272728vw, 3.5rem);
+        line-height: clamp(2rem, 0.36363636363636354rem + 8.727272727272728vw, 3.5rem);
+        padding-top: 50vh;
+        padding-bottom: 3rem;
+        padding-inline: 1rem;
+    }
+    .headerImage {
+        width: 100%;
+        height: 50vh;
+    }
+    .headerDesc {
+        width: 95%;
+        font-size: 1.2rem;
+        font-size: clamp(1.2rem, 0.32727272727272716rem + 4.654545454545455vw, 2rem);
+        padding-top: 2.5rem;
+        line-height: clamp(1.6rem, 0.6181818181818184rem + 5.236363636363635vw, 2.5rem);
+        padding-bottom: 4rem;
+        padding-inline: 1rem;
+    }
+
+    .contentContainer {
+        width: calc(100vw - 2rem);
+        flex-direction: column;
+    }
+    .contentImageContainer {
+        width: 100%;
+    }
+    .contentImage {
+        height: 50vh;
+    }
+    .contentTextContainer {
+        width: 100%;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+    .contentTitle {
+        font-size: 2rem;
+        font-size: clamp(2rem, 0.36363636363636354rem + 8.727272727272728vw, 3.5rem);
+        padding-inline: 1rem;
+        padding-left: 0;
+        padding-bottom: 1.5rem;
+        padding-top: clamp(2rem, -9.64968152866242rem + 40.76433121019108vw, 20rem);
+    }
+    .contentDesc {
+        font-size: 1rem;
+        font-size: clamp(1rem, -0.6363636363636365rem + 8.727272727272728vw, 2.5rem);
+        padding-left: 0rem;
+    }
+
+    .peopleContainer {
+        width: calc(100vw - 2rem);
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+    .peopleImageContainer {
+        width: 100%;
+    }
+    .peopleImage1 {
+        width: 100%;
+        aspect-ratio: 10/11;
+    }
+    .peopleText {
+        font-size: 2rem;
+        font-size: clamp(2rem, 0.36363636363636354rem + 8.727272727272728vw, 3.5rem);
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding: 2rem 0;
+    }
+    .peopleImage2 {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .mainTextContainer {
+        width: calc(100vw - 2rem);
+        justify-content: center;
+        flex-direction: column;
+    }
+    .textContainer {
+        width: 100%;
+        height: auto;
+    }
+    .leftText {
+        font-size: 1rem;
+        font-size: clamp(1rem, -0.6363636363636365rem + 8.727272727272728vw, 2.5rem);
+        width: 100%;
+    }
+    .textContainer:nth-child(2) {
+        margin-top: 0rem;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    .rightTextTitle {
+        font-size: 2rem;
+        font-size: clamp(2rem, 0.36363636363636354rem + 8.727272727272728vw, 3.5rem);
+        font-family: sans-serif;
+        font-weight: 300;
+        width: 100%;
+    }
+    .rightText {
+        font-size: 1rem;
+        font-size: clamp(1rem, -0.6363636363636365rem + 8.727272727272728vw, 2.5rem);
+        font-family: sans-serif;
+        padding-top: 2rem;
+    }
+
     .bottomContainer {
         width: 100vw;
         height: auto;
     }
-    
     .bottomTitle {
         font-size: 1.7rem;
         padding-bottom: 4rem;
         padding-inline: 1.5rem;
     }
-    
     .bottomTextContainer {
         flex-direction: column;
         padding-inline: 1.5rem;
     }
-    
     .subjectContainer {
         width: auto;
     }
     .subjectContainer:nth-child(2), .subjectContainer:nth-child(3) {
         margin-left: 0rem;
     }
-    
     .subjectTitle {
         font-size: 1.5rem;
         padding-bottom: 1.2rem;
         padding-right: 5rem;
     }
-    
     .subjectDesc {
         font-size: 1rem;
         padding-bottom: 4rem;

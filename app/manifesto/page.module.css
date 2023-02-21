@@ -20,7 +20,8 @@
 .sideText {
     color: white;
     font-family: sans-serif;
-    font-size: 1.3rem;
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5636942675159236rem + 0.8662420382165605vw, 1.3rem);
     font-weight: 400;
     text-align: end;
     width: 16rem;
@@ -33,4 +34,54 @@
 .cardContainer {
     border-top: 1px solid white;
     height: 90vh;
+}
+
+@media (max-width: 900px) {
+    .mainContainer {
+        width: calc(100vw - 3rem);
+        justify-content: space-between;
+    }
+    .cardContainer {
+        border-top: 1px solid white;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 765px) {
+    .sideTextContainer {
+        width: 50%;
+    }
+    .sideText {
+        width: 12rem;
+    }
+    .mainCardContainer {
+        width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .mainContainer {
+        width: calc(100vw - 2.4rem);
+        padding-top: 50vh;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .sideTextContainer {
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .sideText {
+        font-size: 1.2rem;
+        font-size: clamp(1.2rem, 0.10909090909090868rem + 5.818181818181819vw, 2.2rem);
+        text-align: end;
+        width: 100%;
+    }
+    .mainCardContainer {
+        width: 100%;
+    }
+    .cardContainer {
+        border-top: none;
+        height: auto;
+    }
 }

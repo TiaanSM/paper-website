@@ -12,7 +12,8 @@
 
 .title {
     width: 70%;
-    font-size: 5rem;
+    font-size: 2rem;
+    font-size: clamp(2rem, -0.19745222929936324rem + 6.114649681528663vw, 5rem);
     font-weight: 300;
     font-family: sans-serif;
     color: white;
@@ -20,7 +21,8 @@
 }
 
 .number {
-    font-size: 5rem;
+    font-size: 2rem;
+    font-size: clamp(2rem, -0.19745222929936324rem + 6.114649681528663vw, 5rem);
     color: white;
     font-family: sans-serif;
 }
@@ -29,5 +31,33 @@
     color: white;
     width: 53%;
     font-family: sans-serif;
-    font-size: 1.3rem;
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5636942675159236rem + 0.8662420382165605vw, 1.3rem);
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    .topContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5rem;
+        padding-bottom: 1.4rem;
+    }
+    .title {
+        width: 70%;
+        font-size: 2.3rem;
+        font-size: clamp(2.3rem, 0.22727272727272663rem + 11.054545454545456vw, 4.2rem);
+    }
+    .number {
+        font-size: 2rem;
+        font-size: clamp(2rem, 0.0363636363636366rem + 10.47272727272727vw, 3.8rem);
+    }
+    .desc {
+        width: 80%;
+        font-size: 1rem;
+        font-size: clamp(1rem, 0.1272727272727272rem + 4.654545454545455vw, 1.8rem);
+    }
 }

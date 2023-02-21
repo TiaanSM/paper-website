@@ -24,7 +24,7 @@ export default function Contact() {
                 <div className={styles.contentTextContainer}>
                     <h3 className={styles.contentTitle}>Best. User. Experience. Ever.</h3>
                     <p className={styles.contentDesc}>
-                    At least, that's what we aim for. Our goal for every project is the same:<br/> to elevate the connection between brands and consumers through our<br/> services. We specialise in product design, project strategy and<br/> consultancy, digital-first branding and technology.
+                    At least, that's what we aim for. Our goal for every project is the same: to elevate the connection between brands and consumers through our services. We specialise in product design, project strategy and consultancy, digital-first branding and technology.
                     </p>
                 </div>
             </div>

@@ -12,7 +12,7 @@ export default function Contact() {
                 <span className={styles.email}>hello@paper.fakeMail</span>
 
                 <span className={styles.label}>VISIT US</span>
-                <span className={styles.address}>Nostreet Western Cape<br/>Cape Town, 7764<br/>South Africa</span>
+                <span className={styles.address}>Nostreet Thornhill<br/>Cape Town, 7764<br/>South Africa</span>
             </div>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>WE'D LOVE TO HEAR FROM YOU.</h1>
