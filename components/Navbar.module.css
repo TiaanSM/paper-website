@@ -26,6 +26,8 @@
     font-size: 1.45rem;
     font-family: sans-serif;
     font-weight: 600;
+    color: black;
+    text-decoration: none;
 }
 
 .reg {
@@ -57,21 +59,19 @@
     overflow: hidden;
     border: 1px solid black; 
     margin-right: 2rem;
-}
-
-.ctaButton > span {
-    padding: 0.45rem 0.8rem;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    position: absolute;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     box-shadow: inset 0px 0px 0px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1rem;
     color: black;
+    text-decoration: none;
 }
 
-.ctaButton > span:hover {
-    box-shadow: inset 0px -2rem 0px 0px black;
+.ctaButton:hover {
+    box-shadow: inset 0px -3rem 0px 0px black;
     color: white;
 }
 
@@ -245,6 +245,7 @@
     position: relative;
     bottom: 1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .socialsContainer {
@@ -252,6 +253,8 @@
     padding: 0;
     list-style: none;
     padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .socialLink {
@@ -262,6 +265,7 @@
     padding-left: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
+    text-decoration: none;
 }
 
 .socialLink:hover, .footerLink:hover {
@@ -299,6 +303,7 @@
     color: white;
     transition: all 0.5s ease;
     animation: revealRev 0.6s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
+    text-decoration: none;
 }
 
 .animatedNavLink {
@@ -311,6 +316,7 @@
     transition: all 0.5s ease;
     transform: translate(0,100%);
     animation: reveal 0.6s cubic-bezier(0.77,0,0.175,1) 0.5s forwards;
+    text-decoration: none;
 }
 
 .linkSpan > .animatedNavLink:nth-child(1):hover {

@@ -1,8 +1,9 @@
 "use client"
 import styles from './Navbar.module.css'
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [isActive, setIsActive] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
   const navStyles = {
     width: '100vw',
     height: '6rem',
-    backgroundColor: 'white',
+    backgroundColor: "white",
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',
@@ -54,7 +55,6 @@ const Navbar = () => {
     zIndex: '100',
     transition: 'top 0.6s ease',
     overflow: 'visible',
-    boxShadow: '1px 1px 6px lightgray'
   }
     
   return (
@@ -63,16 +63,16 @@ const Navbar = () => {
       <div className={styles.contentContainer}>
 
         {isMobile ? <span className={styles.mobileLogo}>P\</span> :
-        <span className={styles.logo}>Paper<span className={styles.reg}>&reg;</span></span>
+        <Link href="/" className={styles.logo}>Paper<span className={styles.reg}>&reg;</span></Link>
         }
         
         <span className={styles.centerText}>DIGITAL SOUL &copy; 2022</span>
 
         <div className={styles.rightContainer}>
 
-            <div className={styles.ctaButton}>
-                <span>Let's talk</span>
-            </div>
+            <Link href="/contact" className={styles.ctaButton}>
+              Let's talk
+            </Link>
 
             <div onClick={handleMenuClick} 
                 className={isActive ? styles.activeMenu : styles.menu}>
@@ -90,33 +90,33 @@ const Navbar = () => {
 
             <div className={openMenu ? styles.animatedLeftContainer : styles.leftMenuContainer}>
                 <div className={styles.bigLogoContainer}>
-                    <span className={styles.bigLogo}>P\</span>
+                    <Link href="/" className={styles.bigLogo}>P\</Link>
                 </div>
                 <ul className={styles.socialsContainer}>
-                    <li className={styles.socialLink}>Behance</li>
-                    <li className={styles.socialLink}>Twitter</li>
-                    <li className={styles.socialLink}>Instagram</li>
-                    <li className={styles.socialLink}>Linkdin</li>
-                    <li className={styles.socialLink}>Medium</li>
+                    <a href="" className={styles.socialLink}>Behance</a>
+                    <a href="" className={styles.socialLink}>Twitter</a>
+                    <a href="" className={styles.socialLink}>Instagram</a>
+                    <a href="" className={styles.socialLink}>Linkdin</a>
+                    <a href="" className={styles.socialLink}>Medium</a>
                 </ul>
             </div>
  
             <div className={styles.rightMenuContainer}>
                 <ul className={styles.linkContainer}>
                   <span className={styles.linkSpan}>
-                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Work</li>
+                    <Link href="work" className={openMenu ? styles.animatedNavLink : styles.navLink}>Work</Link>
                   </span>
                   <span className={styles.linkSpan}>
-                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Services</li>
+                    <Link href="/services" className={openMenu ? styles.animatedNavLink : styles.navLink}>Services</Link>
                     </span>
                     <span className={styles.linkSpan}>
-                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>About</li>
+                    <Link href="/about" className={openMenu ? styles.animatedNavLink : styles.navLink}>About</Link>
                     </span>
                     <span className={styles.linkSpan}>
-                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Manifesto</li>
+                    <Link href="/manifesto" className={openMenu ? styles.animatedNavLink : styles.navLink}>Manifesto</Link>
                     </span>
                     <span className={styles.linkSpan}>
-                    <li className={openMenu ? styles.animatedNavLink : styles.navLink}>Contact</li>
+                    <Link href="/contact" className={openMenu ? styles.animatedNavLink : styles.navLink}>Contact</Link>
                     </span>
                 </ul>
             </div>
