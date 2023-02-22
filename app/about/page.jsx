@@ -2,7 +2,7 @@
 import styles from './page.module.css';
 import Clients from '@/components/Clients';
 
-export default function Contact() {
+export default function About() {
 
   return (
     <main className={styles.main}>  

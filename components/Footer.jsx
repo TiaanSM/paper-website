@@ -4,8 +4,13 @@ import CursorTracker from './CursorTracker';
 
 const Footer = () => {
 
-    const addCursor = () => {
+    const footerStyle = {
         
+        width: '100vw',
+        height: '100vh',
+        position: 'relative',
+        backgroundColor: 'black',
+        display: 'block'// props.display
     }
 
   return (

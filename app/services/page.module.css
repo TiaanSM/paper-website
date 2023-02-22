@@ -21,7 +21,7 @@
     color: white;
     font-size: 2rem;
     font-size: clamp(2rem, -0.16082802547770703rem + 6.012738853503185vw, 4.95rem);
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: clamp(2rem, -0.16082802547770703rem + 6.012738853503185vw, 4.95rem);
     overflow: hidden;

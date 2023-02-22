@@ -25,7 +25,7 @@
 }
 
 .label {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: lightgray;
     font-size: 14px;
     padding-bottom: 0.65rem;
@@ -36,7 +36,7 @@
 
 .email, .address {
     color: lightgray;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.6369426751592357rem + 0.662420382165605vw, 1.2rem);
     font-weight: 300;
@@ -55,7 +55,7 @@
 .title {
     font-size: 2rem;
     font-size: clamp(2rem, -0.12420382165605126rem + 5.9108280254777075vw, 4.9rem);
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: clamp(2.4rem, 0.4222929936305735rem + 5.503184713375795vw, 5.1rem);
     overflow: hidden;
@@ -66,7 +66,7 @@
 
 .desc {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-size: clamp(1rem, 0.6337579617834395rem + 1.019108280254777vw, 1.5rem);
     width: 85%;
@@ -111,7 +111,7 @@
 
 .termsText {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     letter-spacing: -0.5px;
 }
@@ -127,7 +127,7 @@
 
 .noBtn , .yesBtn {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     padding: 0.2rem 0.4rem;
 }
@@ -148,7 +148,7 @@
 
 .submitText {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     width: 50%;
     line-height: 1.2rem;
@@ -161,7 +161,7 @@
     color: white;
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.6369426751592357rem + 0.662420382165605vw, 1.2rem);
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     border-radius: 2rem;
     cursor: pointer;
     box-shadow: inset 0px 0px 0px 0px white;
@@ -181,7 +181,7 @@
 .asideTitle {
     color: lightgray;
     padding-inline: 3rem;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13.5px;
     display: block;
 }
@@ -206,7 +206,7 @@
     font-size: 2.8rem;
     font-size: clamp(2.8rem, 1.554777070063694rem + 3.464968152866242vw, 4.5rem);
     line-height: clamp(2.6rem, 1.3547770700636945rem + 3.4649681528662413vw, 4.3rem);
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -223,7 +223,7 @@
 
 .policyLink {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     cursor: pointer;
     transition: all 1s ease;
@@ -235,7 +235,7 @@
 .copyright {
     color: white;
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-top: 3rem;
 }
 

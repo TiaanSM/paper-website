@@ -47,7 +47,7 @@ const Navbar = (props) => {
   const navStyles = {
     width: '100vw',
     height: '6rem',
-    backgroundColor: "white",
+    backgroundColor: "white",//props.bgColor
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',

@@ -14,14 +14,14 @@
 .number {
     font-size: 1.5rem;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title {
     color: white;
     font-size: 2rem;
     font-size: clamp(2rem, 0.5350318471337581rem + 4.076433121019108vw, 4rem);
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: clamp(2.2rem, 0.7350318471337582rem + 4.076433121019108vw, 4.2rem);
     overflow: hidden;
@@ -34,7 +34,7 @@
 
 .desc {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.6369426751592357rem + 0.662420382165605vw, 1.2rem);
     line-height: clamp(1rem, 0.6337579617834395rem + 1.019108280254777vw, 1.5rem);
@@ -67,7 +67,7 @@
     margin: 0.3rem 0;
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.5636942675159236rem + 0.8662420382165605vw, 1.3rem);
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: clamp(1.1rem, 0.4407643312101912rem + 1.8343949044585985vw, 2rem);
 }
 

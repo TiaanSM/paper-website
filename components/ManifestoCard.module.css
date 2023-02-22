@@ -15,7 +15,7 @@
     font-size: 2rem;
     font-size: clamp(2rem, -0.19745222929936324rem + 6.114649681528663vw, 5rem);
     font-weight: 300;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     overflow: hidden;
 }
@@ -24,13 +24,13 @@
     font-size: 2rem;
     font-size: clamp(2rem, -0.19745222929936324rem + 6.114649681528663vw, 5rem);
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .desc {
     color: white;
     width: 53%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.5636942675159236rem + 0.8662420382165605vw, 1.3rem);
 }

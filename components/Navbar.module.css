@@ -1,16 +1,4 @@
-.nav {
-    width: 100vw;
-    height: 6rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: visible;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: white;
-    z-index: 100;
-}
+
 
 .contentContainer {
     width: 92vw;
@@ -18,16 +6,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
 }
 
 .logo {
     width: 11rem;
     font-size: 1.45rem;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
     text-decoration: none;
+    mix-blend-mode: difference;
 }
 
 .reg {
@@ -36,9 +24,11 @@
 }
 
 .centerText {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    color: white;
+    mix-blend-mode: difference;
 }
 
 .rightContainer {
@@ -46,7 +36,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: transparent;
 }
 
 
@@ -57,22 +46,24 @@
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    border: 1px solid black; 
+    border: 1px solid white; 
     margin-right: 2rem;
     transition: all 0.4s ease;
-    box-shadow: inset 0px 0px 0px 0px black;
+    box-shadow: inset 0px 0px 0px 0px white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    color: black;
+    color: white;
     text-decoration: none;
+    mix-blend-mode: difference;
+    font-weight: 500;
 }
 
 .ctaButton:hover {
-    box-shadow: inset 0px -3rem 0px 0px black;
-    color: white;
+    box-shadow: inset 0px -3rem 0px 0px white;
+    color: black;
 }
 
 /*/ Hamburger Icon /*/
@@ -92,7 +83,6 @@
     height: 1px;
     background-color: white;
     position: absolute;
-    mix-blend-mode: difference;
 }
 
 .bar1 {
@@ -239,7 +229,7 @@
 
 .bigLogo {
     font-size: 10rem;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
     position: relative;
@@ -259,7 +249,7 @@
 
 .socialLink {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     line-height: 1.2rem;
     padding-left: 1rem;
@@ -297,7 +287,7 @@
 .navLink {
     display: block;
     font-size: 4.2rem;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-left: 0.5rem;
     transform: translate(0,0);
     color: white;
@@ -310,7 +300,7 @@
     display: block;
     color: white;
     font-size: 4.2rem;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-left: 0.5rem;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -345,7 +335,7 @@
 
 .footerLink {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     padding-inline: 0.5rem;
     cursor: pointer;
@@ -355,7 +345,7 @@
 .emailLink {
     color: white;
     padding-right: 3.5rem;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     cursor: pointer;
 }
