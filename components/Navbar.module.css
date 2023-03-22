@@ -168,6 +168,7 @@
     animation: menuClickClosed 1.2s ease forwards;
     visibility: hidden;
     transition: visibility 1.5s;
+    z-index: -100;
 }
 
 @keyframes menuClick {

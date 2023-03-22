@@ -3,12 +3,15 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+
 export default function RootLayout({ children }) {
 
   // TODO:
   // clamp texts, responsiveness, animation triggers, load page, video, 
   // navbar colors, background-colors, links, carousel functionality, other pages.
   // sticky navbar,
+
+  const isContactPage = window.pathname === '/contact';
 
   return (
     <html lang="en">
@@ -20,7 +23,7 @@ export default function RootLayout({ children }) {
        <body>
        <Navbar />
         {children}
-       <Footer /> 
+        <Footer />
        </body>
     </html>
   )
