@@ -13,36 +13,54 @@ const Navbar = (props) => {
         setOpenMenu(!openMenu);
     }
 
-    const isMobile = window.innerWidth < 575;
+    
 
     // navbar sticky
   
+
+    const isMobile = window.innerWidth < 575;
+
     let oldScrollY = 0;
 
   const [direction, setDirection] = useState('up');
 
   const controlDirection = () => {
+    if (typeof window !== 'undefined') {
+
     if(window.scrollY > oldScrollY) {
         setDirection('down');
     } else {
         setDirection('up');
     }
     oldScrollY = window.scrollY;
+
+    }
   }
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+
     window.addEventListener('scroll', controlDirection);
     return () => {
         window.removeEventListener('scroll', controlDirection);
     };
+
+  }
   },[]);
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+
+
     window.addEventListener('scroll', controlDirection);
 
     return () => window.removeEventListener('scroll', controlDirection);
 
+    }
+
   }, []);
+
+  
 
   const navStyles = {
     width: '100vw',
