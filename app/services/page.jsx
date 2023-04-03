@@ -1,6 +1,6 @@
 "use client"
 import styles from './page.module.css';
-import ServicesCard from '@/components/servicesCard';
+import ServicesCard from '@/components/ServicesCard';
 
 export default function Services() {
 
