@@ -2,6 +2,7 @@
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import {usePathname} from 'next/navigation'
 
 
 export default function RootLayout({ children }) {
@@ -9,10 +10,13 @@ export default function RootLayout({ children }) {
   // TODO:
   // clamp texts, responsiveness, animation triggers, load page, video, 
   // navbar colors, background-colors, links, carousel functionality, other pages.
-  // sticky navbar,
+  const pathname = usePathname();
 
-  const isContactPage = window.pathname === '/contact';
+  const hideFooter = pathname === '/contact' 
 
+  console.log(hideFooter)
+  console.log(pathname)
+  
   return (
     <html lang="en">
       {/*
@@ -23,7 +27,7 @@ export default function RootLayout({ children }) {
        <body>
        <Navbar />
         {children}
-        <Footer />
+        {hideFooter ? null : <Footer />}
        </body>
     </html>
   )
